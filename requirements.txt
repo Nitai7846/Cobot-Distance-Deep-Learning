@@ -1,0 +1,11 @@
+# Install in a NEW Python 3.10/3.11 environment. Keep an existing working env untouched.
+# PyTorch installation can be platform-specific; see README.
+numpy>=1.24,<3
+opencv-python>=4.8,<5
+Pillow>=10,<13
+scipy>=1.11,<2
+matplotlib>=3.7,<4
+torch>=2.2,<3
+ultralytics>=8.3,<9
+transformers>=4.45,<5
+imageio-ffmpeg>=0.5,<1
