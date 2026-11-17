@@ -6,10 +6,6 @@ segmented visible surfaces to 3D, and estimating their relative XYZ displacement
 and separation. Includes **post-run 3D point-cloud MP4 visualizations** with 12
 camera viewpoints.
 
-> **Research prototype — not safety-rated.** Predicted depth is not measured
-> depth, and the nearest surface distances can be badly distorted by prediction
-> errors, segmentation boundaries, and occlusion. Do **not** use for protective
-> robot stopping distances, collision avoidance, or other safety decisions.
 
 ## How it works
 
@@ -77,13 +73,6 @@ For macOS ARM64 or another specialized platform, install an appropriate CPU
 PyTorch build using [official PyTorch instructions](https://pytorch.org/get-started/locally/)
 if the generic `requirements.txt` install does not work. This project defaults
 to `--device cpu`; MPS is **not needed** and should not be assumed stable.
-
-**For contributors who already have a working environment:** keep it. Do not
-blindly reinstall PyTorch, Ultralytics, or Transformers. Install only missing
-packages, such as `python -m pip install imageio-ffmpeg` for MP4 rendering.
-
-Pretrained checkpoints are fetched automatically on the first model run;
-internet access is needed then. Model weights are not bundled in this repo.
 
 ## 1. Calibrate YOUR webcam
 
